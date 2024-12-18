@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <locale.h>
 
 
 // Função 1 - Conversor de comprimento - Jadson de Jesus Santos (github.com/JadsonEng)
@@ -228,7 +227,6 @@ void converterPotencia() {
 
 // interface - Thiago Sousa (github.com/thiagosousa81)
 int main() {
-    setlocale(LC_ALL, ""); // Configura UTF-8
     while (1) {
         float valor;
         int op;
