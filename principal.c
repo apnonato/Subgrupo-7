@@ -1,5 +1,71 @@
 #include <stdio.h>
 
+// Função 1 - Conversor de comprimento - Jadson de Jesus Santos (github.com/JadsonEng)
+void converterComprimento()
+{
+    int mode;
+    float metro, centimetro, milimetro;
+
+	printf("Selecione a conversao desejada");
+    printf("\n1 - metro para centimetro");
+    printf("\n2 - metro para milimetro");
+    printf("\n3 - centimetro para metro");
+    printf("\n4 - centimetro para milimetro");
+    printf("\n5 - milimetro para metro");
+    printf("\n6 - milimetro para centimetro");
+    printf("\nDigite o numero da opcao desejada:");
+    scanf("%d", &mode);
+
+    switch (mode)
+    {
+    case 1:
+        printf("Digite o valor em metro a ser convertido para centimetro:");
+        scanf("%f", &metro);
+        centimetro = metro * 100;
+        printf("\nO valor em centimetro eh: %.2fcm\n", centimetro);        
+        break;
+
+    case 2:
+        printf("Digite o valor em metro a ser convertido para milimetro:");
+        scanf("%f", &metro);
+        milimetro = metro * 1000;
+        printf("\nO valor em milimetro eh: %.2fmm\n", milimetro);        
+        break;
+
+    case 3:
+        printf("Digite o valor em centimetro a ser convertido para metro:");
+        scanf("%f", &centimetro);
+        metro = centimetro / 100;
+        printf("\nO valor em metro eh: %.2fm\n", metro);        
+        break;
+
+    case 4:
+        printf("Digite o valor em centimetro a ser convertido para milimetro:");
+        scanf("%f", &centimetro);
+        milimetro = centimetro * 10;
+        printf("\nO valor em milimetro eh: %.2fmm\n", milimetro);        
+        break;
+
+    case 5:
+        printf("Digite o valor em milimetro a ser convertido para metro:");
+        scanf("%f", &milimetro);
+        metro = milimetro / 1000;
+        printf("\nO valor em metro eh: %.2fm\n", metro);        
+        break;
+
+    case 6:
+        printf("Digite o valor em milimetro a ser convertido para centimetro:");
+        scanf("%f", &milimetro);
+        centimetro = milimetro / 10;
+        printf("\nO valor em centimetro eh: %.2fcm\n", centimetro);        
+        break;
+    
+    default: // Caso inválido
+        printf("\nOpcao invalida, tente novamente...\n");
+        break;
+    }
+}
+
 // Função 4 - Conversor de temperatura - Thiago Sousa (github.com/thiagosousa81)
 void converterTemperatura(int opcao, float valor) {
     float resultado;
@@ -73,6 +139,7 @@ int main() {
         {
             case 1:
                 printf("Conversor de unidades de comprimento\n");
+                converterComprimento();
                 break;
             case 2:
                 printf("Conversor de unidades de massa\n");
