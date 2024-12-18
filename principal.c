@@ -66,6 +66,55 @@ void converterComprimento()
     }
 }
 
+// Função 3 - Conversor de volume - Lucas Ribeiro (github.com/lucasribeiro32)
+void converterLitros(float litros){
+    float mililitros = litros * 1000;
+    float metroscubicos = litros / 1000;
+    printf("O valor em mililitros é: %.2f\n", mililitros);
+    printf("O valor em metros cúbicos é: %.2f\n", metroscubicos);
+}
+void converterMiliLitros(float mililitros){
+    float litros = mililitros / 1000;
+    float metroscubicos = litros / 1000;
+    printf("O valor em litros é: %.2f\n", litros);
+    printf("O valor em metros cúbicos é: %.4f\n", metroscubicos);
+
+}
+void converterMetrosCubicos( float metroscubicos){
+    float litros = metroscubicos * 1000;
+    float mililitros = litros * 1000;
+    printf("O valor em litros é: %.2f\n", litros);
+    printf("O valor em mililitros é: %.2f\n", mililitros);
+}
+
+void converterVolume(){
+    int opcao;
+    float valor;
+    printf("Escolha uma das opções de conversão de volume:\n");
+    printf("1 - Litros para mililitros e metros cúbicos\n");
+    printf("2 - Mililitros para litros e metros cúbicos\n");
+    printf("3 - Metros cúbicos para litros e mililitros\n");
+    scanf("%d", &opcao);
+    printf("Digite o valor a ser convertido: ");
+    scanf("%f", &valor);
+    switch (opcao)
+    {
+    case 1:
+        converterLitros(valor);
+        break;
+    case 2:
+        converterMiliLitros(valor);
+        break;
+    case 3:
+        converterMetrosCubicos(valor);
+        break;
+    default:
+        printf("Opção inválida!\n");
+        break;
+    }
+}
+
+
 // Função 4 - Conversor de temperatura - Thiago Sousa (github.com/thiagosousa81)
 void converterTemperatura(int opcao, float valor) {
     float resultado;
@@ -146,6 +195,7 @@ int main() {
                 break;
             case 3:
                 printf("Conversor de unidades de volume\n");
+                converterVolume();
                 break;
             case 4:
                 // Use esse exemplo para desenvolver sua parte
