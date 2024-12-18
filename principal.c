@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 // Função 1 - Conversor de comprimento - Jadson de Jesus Santos (github.com/JadsonEng)
 void converterComprimento()
 {
@@ -175,6 +176,55 @@ void converterVelocidade(int opcao, float valor) {
     
 }
 
+//6 - Conversor de potência - Lucas Ribeiro (github.com/lucasribeiro32)
+void converterWatts(float watts) {
+    float quilowatts = watts / 1000;
+    float cavalosVapor = watts / 735.5; // 1 cv = 735.5 W
+    printf("O valor em quilowatts é: %.2f kW\n", quilowatts);
+    printf("O valor em cavalos-vapor é: %.2f cv\n", cavalosVapor);
+}
+
+void converterQuilowatts(float quilowatts) {
+    float watts = quilowatts * 1000;
+    float cavalosVapor = watts / 735.5;
+    printf("O valor em watts é: %.2f W\n", watts);
+    printf("O valor em cavalos-vapor é: %.2f cv\n", cavalosVapor);
+}
+
+void converterCavalosVapor(float cavalosVapor) {
+    float watts = cavalosVapor * 735.5;
+    float quilowatts = watts / 1000;
+    printf("O valor em watts é: %.2f W\n", watts);
+    printf("O valor em quilowatts é: %.2f kW\n", quilowatts);
+}
+
+void converterPotencia() {
+    int opcao;
+    float valor;
+    printf("Escolha uma das opções de conversão de potência:\n");
+    printf("1 - Watts para quilowatts e cavalos-vapor\n");
+    printf("2 - Quilowatts para watts e cavalos-vapor\n");
+    printf("3 - Cavalos-vapor para watts e quilowatts\n");
+    scanf("%d", &opcao);
+    printf("Digite o valor a ser convertido: ");
+    scanf("%f", &valor);
+
+    switch (opcao) {
+    case 1:
+        converterWatts(valor);
+        break;
+    case 2:
+        converterQuilowatts(valor);
+        break;
+    case 3:
+        converterCavalosVapor(valor);
+        break;
+    default:
+        printf("Opção inválida!\n");
+    }
+}
+
+
 // interface - Thiago Sousa (github.com/thiagosousa81)
 int main() {
     while (1) {
@@ -217,6 +267,7 @@ int main() {
                 break;
             case 6:
                 printf("Conversor de unidades de potência\n");
+                converterPotencia();
                 break;
             case 7:
                 printf("Conversor de unidades de área\n");
