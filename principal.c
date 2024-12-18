@@ -25,9 +25,45 @@ void converterTemperatura(int opcao, float valor) {
     }
 }
 
+// Função 5 - Conversor de velocidade - Anibal Maldonado (github.com/PhD-Anibal)
+// km/h, m/s, mph
+void converterVelocidade(int opcao, float valor) {
+    float resultadoKmh;
+    float resultadoms;
+    float resultadomph;
+
+    switch (opcao) {
+        case 1: // formulas para converter de Km/h para:
+            resultadoKmh = valor;
+            resultadoms = valor/3.6; // m/s
+            resultadomph = valor * 0.621371; // mph
+            printf("As velocidades são: %.2f Km/h = %.2f m/s = %.2f mph\n", resultadoKmh, resultadoms, resultadomph);
+            break;
+
+        case 2: // formulas para converter de m/s para:
+            resultadoms = valor;
+            resultadoKmh = valor*3.6; // Km/h
+            resultadomph = valor * 2.23694; // mph
+            printf("As velocidades são: %.2f Km/h = %.2f m/s = %.2f mph\n", resultadoKmh, resultadoms, resultadomph);
+            break;
+
+        case 3: // formulas para converter de mph para:
+            resultadomph = valor;
+            resultadoKmh = valor*1.60934; // Km/h
+            resultadoms = valor / 2.23694; // m/s
+            printf("As velocidades são: %.2f Km/h = %.2f m/s = %.2f mph\n", resultadoKmh, resultadoms, resultadomph);
+            break;
+
+        default:
+            printf("Opção inválida!\n");
+    }
+    
+}
+
 // interface - Thiago Sousa (github.com/thiagosousa81)
 int main() {
-    
+    float valor;
+
     int op;
     printf("Escolha uma das opções de conversor:\n");
     printf("1 - Comprimento\n2 - Massa\n3 - Volume\n4 - Temperatura\n5 - Velocidade\n6 - Potência\n7 - Área\n8 - Tempo\n9 - Armazenamento\n10 - Sair\n");
@@ -48,7 +84,6 @@ int main() {
             // Use esse exemplo para desenvolver sua parte
             printf("Conversor de unidades de temperatura\nEscolha uma função\n1 - Celsius para Fahrenheit\n2 - Fahrenheit para Kelvin\n3 - Kelvin para Celsius\n");
             scanf("%d", &op);
-            float valor;
             printf("Digite um valor:");
             scanf("%f", &valor);
             converterTemperatura(op, valor);
@@ -56,6 +91,12 @@ int main() {
             break;
         case 5:
             printf("Conversor de unidades de velocidade\n");
+            printf("Sua velocidade está em qual unidade? [Escolha 1, 2 ou 3]\n");
+            printf("1 - Km/h\n2 - m/s\n3 - mph\n");
+            scanf("%d", &op);
+            printf("Digite o valor da velocidade:");
+            scanf("%f", &valor);
+            converterVelocidade(op, valor);            
             break;
         case 6:
             printf("Conversor de unidades de potência\n");
