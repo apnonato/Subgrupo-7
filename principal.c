@@ -287,7 +287,7 @@ float converterArea(int entrada, int saida, float value) {
     }
 
     // Calculando o valor convertido
-    valor_saida = value * (fator_saida / fator_entrada);
+    valor_saida = value * (fator_entrada / fator_saida);
     
     return valor_saida;
 }
