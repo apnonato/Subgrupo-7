@@ -19,6 +19,22 @@ https://github.com/anuraghazra/github-readme-stats/tree/master/themes-->
 
 ## Funcionalidades
 
+<details><summary><h3>Implementações</h3></summary>
+
+As marcadas já estão implementadas
+
+- [x] 1 - Distância
+- [ ] 2 - Massa
+- [x] 3 - Volume
+- [x] 4 - Temperatura
+- [x] 5 - Velocidade
+- [x] 6 - Potência
+- [x] 7 - Área
+- [x] 8 - Tempo
+- [ ] 9 - Armazenamento   
+
+</details>
+
 O sistema de conversão de unidades foi projetado para permitir a conversão entre unidades de diversas grandezas físicas. As funcionalidades implementadas incluem:
 
 - **Comprimento**: Converte entre diferentes unidades de comprimento, como metros, quilômetros, centímetros, milímetros, etc.
