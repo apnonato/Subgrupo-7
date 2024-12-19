@@ -357,7 +357,7 @@ int main() {
 
                 // Exibe o resultado da conversão
                 if (resultado != -1) {
-                    printf("Resultado: %.2f\n", resultado);
+                    printf("Resultado: %.6f\n", resultado);
                 }
                 break;
             case 8:            
