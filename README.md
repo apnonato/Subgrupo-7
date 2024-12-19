@@ -5,6 +5,16 @@ Este projeto tem como objetivo a implementação de um sistema que permite a con
 ## Desenvolvido por
 
 **Subgrupo 7 - Grupo 2**
+<details><summary><h3>Participantes</h3></summary>
+<!--Esses códigos vcs podem usar pra melhorar o read-me do perfil de vcs
+Vejam mais detalhes aqui
+https://github.com/anuraghazra/github-readme-stats/tree/master/themes-->
+
+| ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=JadsonEng&show_icons=true&theme=neon&locale=pt-br) | ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=LucasRibeiro36&show_icons=true&theme=neon&locale=pt-br) |
+| --- | --- | 
+| ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiagosousa81&show_icons=true&theme=neon&locale=pt-br) | ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=PhD-Anibal&show_icons=true&theme=neon&locale=pt-br) | 
+
+</details>
 
 ## Funcionalidades
 
@@ -26,9 +36,25 @@ Ao executar o programa, o usuário será apresentado com um menu de opções num
 
 ### Exemplo de Execução
 
-Escolha uma das opções de conversor: 1 - Comprimento 2 - Massa 3 - Volume 4 - Temperatura 5 - Velocidade 6 - Potência 7 - Área 8 - Tempo 9 - Armazenamento 10 - Sair
+    Escolha uma das opções de conversor: 
+    1 - Comprimento 
+    2 - Massa 
+    3 - Volume 
+    4 - Temperatura 
+    5 - Velocidade 
+    6 - Potência 
+    7 - Área 
+    8 - Tempo 
+    9 - Armazenamento 
+    10 - Sair
 
     Digite a opção desejada: 4
     Conversor de unidades de temperatura
-    Digite as unidades necessárias
+    Escolha uma função:
+    1 - Celsius para Fahrenheit
+    2 - Fahrenheit para Kelvin
+    3 - Kelvin para Celsius
+    1
+    Digite um valor:40
+    40.00 Celsius = 104.00 Fahrenheit
 
