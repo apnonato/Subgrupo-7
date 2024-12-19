@@ -292,6 +292,49 @@ float converterArea(int entrada, int saida, float value) {
     return valor_saida;
 }
 
+// Função 8 - Conversor de tempo - Letícia Gonçalves Souza (github.com/ltiicia)
+void converterTempo()
+{
+    int opcao;
+    float valor, resultado;
+
+    printf("Escolha a conversão de tempo desejada:\n");
+    printf("1 - Segundos para minutos e horas\n");
+    printf("2 - Minutos para segundos e horas\n");
+    printf("3 - Horas para segundos e minutos\n");
+    printf("Digite sua opção: ");
+    scanf("%d", &opcao);
+
+    printf("Digite o valor a ser convertido: ");
+    scanf("%f", &valor);
+
+    switch (opcao)
+    {
+    case 1: // Segundos para minutos e horas
+        printf("%.2f segundos equivalem a:\n", valor);
+        printf("%.2f minutos\n", valor / 60);
+        printf("%.2f horas\n", valor / 3600);
+        break;
+
+    case 2: // Minutos para segundos e horas
+        printf("%.2f minutos equivalem a:\n", valor);
+        printf("%.2f segundos\n", valor * 60);
+        printf("%.2f horas\n", valor / 60);
+        break;
+
+    case 3: // Horas para segundos e minutos
+        printf("%.2f horas equivalem a:\n", valor);
+        printf("%.2f segundos\n", valor * 3600);
+        printf("%.2f minutos\n", valor * 60);
+        break;
+
+    default:
+        printf("Opção inválida!\n");
+        break;
+    }
+}
+
+
 
 // interface - Thiago Sousa (github.com/thiagosousa81)
 int main() {
@@ -362,6 +405,7 @@ int main() {
                 break;
             case 8:            
                 printf("Conversor de unidades de tempo\n");
+                converterTempo();
                 break;
             case 9:
                 printf("Conversor de unidades de armazenamento\n");
