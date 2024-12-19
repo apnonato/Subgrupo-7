@@ -8,9 +8,9 @@ Este projeto tem como objetivo a implementação de um sistema que permite a con
 <details><summary><h3>Participantes</h3></summary>
 <!--Esses códigos vcs podem usar pra melhorar o read-me do perfil de vcs-->
 
-| ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiagosousa81&show_icons=true&theme=neon&locale=pt-br) | ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=PhD-Anibal&show_icons=true&theme=neon&locale=pt-br) | 
-| --- | --- | 
 | ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=JadsonEng&show_icons=true&theme=neon&locale=pt-br) | ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=LucasRibeiro36&show_icons=true&theme=neon&locale=pt-br) |
+| --- | --- | 
+| ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiagosousa81&show_icons=true&theme=neon&locale=pt-br) | ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=PhD-Anibal&show_icons=true&theme=neon&locale=pt-br) | 
 
 </details>
 
