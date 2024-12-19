@@ -12,7 +12,8 @@ https://github.com/anuraghazra/github-readme-stats/tree/master/themes-->
 
 | ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=JadsonEng&show_icons=true&theme=neon&locale=pt-br) | ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=LucasRibeiro36&show_icons=true&theme=neon&locale=pt-br) |
 | --- | --- | 
-| ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiagosousa81&show_icons=true&theme=neon&locale=pt-br) | ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=PhD-Anibal&show_icons=true&theme=neon&locale=pt-br) | 
+| ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Ltiicia&show_icons=true&theme=neon&locale=pt-br) | ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=PhD-Anibal&show_icons=true&theme=neon&locale=pt-br) | 
+| ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiagosousa81&show_icons=true&theme=neon&locale=pt-br) | |
 
 </details>
 
