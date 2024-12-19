@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <math.h> // Obrigatório para a função 7
 
 // Função 1 - Conversor de comprimento - Jadson de Jesus Santos (github.com/JadsonEng)
 void converterComprimento()
@@ -19,51 +19,51 @@ void converterComprimento()
 
     switch (mode)
     {
-    case 1:
-        printf("Digite o valor em metro a ser convertido para centimetro:");
-        scanf("%f", &metro);
-        centimetro = metro * 100;
-        printf("\nO valor em centimetro eh: %.2fcm\n", centimetro);        
-        break;
+        case 1:
+            printf("Digite o valor em metro a ser convertido para centimetro:");
+            scanf("%f", &metro);
+            centimetro = metro * 100;
+            printf("\nO valor em centimetro eh: %.2fcm\n", centimetro);        
+            break;
 
-    case 2:
-        printf("Digite o valor em metro a ser convertido para milimetro:");
-        scanf("%f", &metro);
-        milimetro = metro * 1000;
-        printf("\nO valor em milimetro eh: %.2fmm\n", milimetro);        
-        break;
+        case 2:
+            printf("Digite o valor em metro a ser convertido para milimetro:");
+            scanf("%f", &metro);
+            milimetro = metro * 1000;
+            printf("\nO valor em milimetro eh: %.2fmm\n", milimetro);        
+            break;
 
-    case 3:
-        printf("Digite o valor em centimetro a ser convertido para metro:");
-        scanf("%f", &centimetro);
-        metro = centimetro / 100;
-        printf("\nO valor em metro eh: %.2fm\n", metro);        
-        break;
+        case 3:
+            printf("Digite o valor em centimetro a ser convertido para metro:");
+            scanf("%f", &centimetro);
+            metro = centimetro / 100;
+            printf("\nO valor em metro eh: %.2fm\n", metro);        
+            break;
 
-    case 4:
-        printf("Digite o valor em centimetro a ser convertido para milimetro:");
-        scanf("%f", &centimetro);
-        milimetro = centimetro * 10;
-        printf("\nO valor em milimetro eh: %.2fmm\n", milimetro);        
-        break;
+        case 4:
+            printf("Digite o valor em centimetro a ser convertido para milimetro:");
+            scanf("%f", &centimetro);
+            milimetro = centimetro * 10;
+            printf("\nO valor em milimetro eh: %.2fmm\n", milimetro);        
+            break;
 
-    case 5:
-        printf("Digite o valor em milimetro a ser convertido para metro:");
-        scanf("%f", &milimetro);
-        metro = milimetro / 1000;
-        printf("\nO valor em metro eh: %.2fm\n", metro);        
-        break;
+        case 5:
+            printf("Digite o valor em milimetro a ser convertido para metro:");
+            scanf("%f", &milimetro);
+            metro = milimetro / 1000;
+            printf("\nO valor em metro eh: %.2fm\n", metro);        
+            break;
 
-    case 6:
-        printf("Digite o valor em milimetro a ser convertido para centimetro:");
-        scanf("%f", &milimetro);
-        centimetro = milimetro / 10;
-        printf("\nO valor em centimetro eh: %.2fcm\n", centimetro);        
-        break;
-    
-    default: // Caso inválido
-        printf("\nOpcao invalida, tente novamente...\n");
-        break;
+        case 6:
+            printf("Digite o valor em milimetro a ser convertido para centimetro:");
+            scanf("%f", &milimetro);
+            centimetro = milimetro / 10;
+            printf("\nO valor em centimetro eh: %.2fcm\n", centimetro);        
+            break;
+        
+        default: // Caso inválido
+            printf("\nOpcao invalida, tente novamente...\n");
+            break;
     }
 }
 
@@ -210,18 +210,86 @@ void converterPotencia() {
     scanf("%f", &valor);
 
     switch (opcao) {
-    case 1:
-        converterWatts(valor);
-        break;
-    case 2:
-        converterQuilowatts(valor);
-        break;
-    case 3:
-        converterCavalosVapor(valor);
-        break;
-    default:
-        printf("Opção inválida!\n");
+        case 1:
+            converterWatts(valor);
+            break;
+        case 2:
+            converterQuilowatts(valor);
+            break;
+        case 3:
+            converterCavalosVapor(valor);
+            break;
+        default:
+            printf("Opção inválida!\n");
     }
+}
+
+//7 - Conversor de Área - Thiago Sousa (github.com/thiagosousa81)
+float converterArea(int entrada, int saida, float value) {
+    float fator_entrada = 0;
+    float fator_saida = 0;
+    float valor_saida = 0;
+
+    // Definindo os fatores de conversão para a unidade de entrada
+    switch (entrada) {
+        case 1: // km²
+            fator_entrada = pow(10, 6);
+            break;
+        case 2: // hm²
+            fator_entrada = pow(10, 4);
+            break;
+        case 3: // dam²
+            fator_entrada = pow(10, 2);
+            break;
+        case 4: // m²
+            fator_entrada = 1;
+            break;
+        case 5: // dm²
+            fator_entrada = pow(10, -2);
+            break;
+        case 6: // cm²
+            fator_entrada = pow(10, -4);
+            break;
+        case 7: // mm²
+            fator_entrada = pow(10, -6);
+            break;
+        default:
+            printf("Unidade de entrada inválida.\n");
+            return -1; // Valor de erro para entrada inválida
+    }
+
+    // Definindo os fatores de conversão para a unidade de saída
+    switch (saida) {
+        case 1: // km²
+            fator_saida = pow(10, 6);
+            break;
+        case 2: // hm²
+            fator_saida = pow(10, 4);
+            break;
+        case 3: // dam²
+            fator_saida = pow(10, 2);
+            break;
+        case 4: // m²
+            fator_saida = 1;
+            break;
+        case 5: // dm²
+            fator_saida = pow(10, -2);
+            break;
+        case 6: // cm²
+            fator_saida = pow(10, -4);
+            break;
+        case 7: // mm²
+            fator_saida = pow(10, -6);
+            break;
+        default:
+            printf("Unidade de saída inválida.\n");
+            return -1; // Valor de erro para saída inválida
+    }
+
+    // Calculando o valor convertido
+    valor_saida = value * (fator_saida / fator_entrada);
+    
+    return valor_saida;
 }
 
 
@@ -271,6 +339,26 @@ int main() {
                 break;
             case 7:
                 printf("Conversor de unidades de área\n");
+                int entrada, saida;
+                float value, resultado;
+
+                // Solicita as informações ao usuário
+                printf("Digite o valor a ser convertido: ");
+                scanf("%f", &value);
+
+                printf("Digite a unidade de origem\n1 - km²\n2 - hm²\n3 - dam²\n4 - m²\n5 - dm²\n6 - cm²\n7 - mm²\n");
+                scanf("%d", &entrada);
+
+                printf("Digite a unidade de destino\n1 - km²\n2 - hm²\n3 - dam²\n4 - m²\n5 - dm²\n6 - cm²\n7 - mm²\n ");
+                scanf("%d", &saida);
+
+                // Chama a função de conversão
+                resultado = converterArea(entrada, saida, value);
+
+                // Exibe o resultado da conversão
+                if (resultado != -1) {
+                    printf("Resultado: %.2f\n", resultado);
+                }
                 break;
             case 8:            
                 printf("Conversor de unidades de tempo\n");
