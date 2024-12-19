@@ -6,7 +6,9 @@ Este projeto tem como objetivo a implementação de um sistema que permite a con
 
 **Subgrupo 7 - Grupo 2**
 <details><summary><h3>Participantes</h3></summary>
-<!--Esses códigos vcs podem usar pra melhorar o read-me do perfil de vcs-->
+<!--Esses códigos vcs podem usar pra melhorar o read-me do perfil de vcs
+Vejam mais detalhes aqui
+https://github.com/anuraghazra/github-readme-stats/tree/master/themes-->
 
 | ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=JadsonEng&show_icons=true&theme=neon&locale=pt-br) | ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=LucasRibeiro36&show_icons=true&theme=neon&locale=pt-br) |
 | --- | --- | 
