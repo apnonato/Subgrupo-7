@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <math.h> // Obrigatório para a função 7
-
 // Função 1 - Conversor de comprimento - Jadson de Jesus Santos (github.com/JadsonEng)
 void converterComprimento()
 {
@@ -333,7 +332,31 @@ void converterTempo()
         break;
     }
 }
-
+// Conversor de massa - José Bruno de Souza Alves (https://github.com/JoseBrunoSouza)
+void converterMassa(){
+    double valor,valornovo,mult;
+    int op1,op2;
+    char unidade[3][15]= {"Grama(s)","Quilograma(s)","Tonelada(s)"};
+    printf("\n1 -> Grama\n2 -> Quilograma\n3 -> Tonelada\n");
+    printf("o que quer transformar?: ");
+    scanf("%d", &op1);
+    printf("\nQuantidade: ");
+    scanf("%lf",&valor);
+    printf("\n1 -> Grama\n2 -> Quilograma\n3 -> Tonelada\n");
+    printf("Em que quer transformar: ");
+    scanf("%d", &op2);
+    if (op1>op2){
+        mult=op1-op2;
+        valornovo = valor*(pow(1000,mult));
+    }else if (op2>op1){
+        mult=op2-op1;
+        valornovo = valor/(pow(1000,mult));
+    }else{
+        valornovo = valor;
+    }
+    printf("%.2lf %s valem %.2lf %s\n",valor,unidade[op1-1],valornovo,unidade[op2-1]);
+    printf("\n");
+}
 
 
 // interface - Thiago Sousa (github.com/thiagosousa81)
@@ -352,7 +375,8 @@ int main() {
                 converterComprimento();
                 break;
             case 2:
-                printf("Conversor de unidades de massa\n");
+                printf("\nConversor de unidades de massa\n");
+                converterMassa();
                 break;
             case 3:
                 printf("Conversor de unidades de volume\n");
