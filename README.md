@@ -13,7 +13,7 @@ https://github.com/anuraghazra/github-readme-stats/tree/master/themes-->
 | ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=JadsonEng&show_icons=true&theme=neon&locale=pt-br) | ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=LucasRibeiro36&show_icons=true&theme=neon&locale=pt-br) |
 | --- | --- | 
 | ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Ltiicia&show_icons=true&theme=neon&locale=pt-br) | ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=PhD-Anibal&show_icons=true&theme=neon&locale=pt-br) | 
-| ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiagosousa81&show_icons=true&theme=neon&locale=pt-br) | |
+| ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=thiagosousa81&show_icons=true&theme=neon&locale=pt-br) | ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=JoseBrunoSouza&show_icons=true&theme=neon&locale=pt-br) |
 
 </details>
 
@@ -24,14 +24,15 @@ https://github.com/anuraghazra/github-readme-stats/tree/master/themes-->
 As marcadas já estão implementadas
 
 - [x] 1 - Distância
-- [ ] 2 - Massa
+- [x] 2 - Massa
 - [x] 3 - Volume
 - [x] 4 - Temperatura
 - [x] 5 - Velocidade
 - [x] 6 - Potência
 - [x] 7 - Área
 - [x] 8 - Tempo
-- [ ] 9 - Armazenamento   
+- [ ] 9 - Armazenamento
+- [ ] 10 - Bônus
 
 </details>
 
@@ -46,6 +47,7 @@ O sistema de conversão de unidades foi projetado para permitir a conversão ent
 - **Área**: Converte entre unidades de área, como metros quadrados, quilômetros quadrados, hectares, etc.
 - **Tempo**: Converte entre unidades de tempo, como segundos, minutos, horas, dias, etc.
 - **Armazenamento**: Converte entre unidades de armazenamento de dados, como bytes, kilobytes, megabytes, gigabytes, etc.
+- **Bônus**: Um conversor de bônus para uma unidade qualquer
 
 ## Como Usar
 
@@ -63,7 +65,8 @@ Ao executar o programa, o usuário será apresentado com um menu de opções num
     7 - Área 
     8 - Tempo 
     9 - Armazenamento 
-    10 - Sair
+    10 - Bônus
+    11 - Sair
 
     Digite a opção desejada: 4
     Conversor de unidades de temperatura
