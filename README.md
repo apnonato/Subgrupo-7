@@ -1,6 +1,11 @@
 # Sistema de Conversão de Unidades
 
-Este projeto tem como objetivo a implementação de um sistema que permite a conversão entre diferentes unidades de medida em várias categorias. O sistema oferece uma interface de linha de comando simples, onde o usuário pode escolher entre diversas opções de conversores, como comprimento, massa, volume, temperatura, velocidade, potência, área, tempo e armazenamento.
+Este projeto tem como objetivo a implementação de um sistema que permite a conversão entre diferentes unidades de medida em várias categorias. É ideal para estudantes, profissionais e qualquer pessoa que precise realizar conversões rápidas e precisas entre diferentes unidades de medida. O sistema oferece uma interface de linha de comando simples, onde o usuário pode escolher entre diversas opções de conversores, como comprimento, massa, volume, temperatura, velocidade, potência, área, tempo e armazenamento.
+
+Por que usar?
+- Economize tempo ao evitar cálculos manuais.
+- Garanta precisão em suas conversões.
+- Utilize uma ferramenta leve e prática, acessível diretamente do terminal.
 
 ## Desenvolvido por
 
@@ -78,3 +83,42 @@ Ao executar o programa, o usuário será apresentado com um menu de opções num
     Digite um valor:40
     40.00 Celsius = 104.00 Fahrenheit
 
+## Como Instalar
+1. Clone este repositório:
+   
+        git clone https://github.com/JoseBrunoSouza/Subgrupo-7.git
+2. Compile o código::
+
+       gcc principal.c -o conversor
+3. Execute o programa
+
+       ./conversor
+
+## Contribuição
+1. Faça um fork do repositório clicando no botão "Fork" no canto superior direito.
+2. Clone o repositório para sua máquina local:
+   ```bash
+   git clone https://github.com/usuario/repositorio.git
+   ```
+3. Crie uma branch para sua funcionalidade ou correção:
+   ```bash
+   git checkout -b minha-feature
+   ```
+4. Faça as alterações necessárias e adicione os arquivos modificados:
+   ```bash
+   git add .
+   ```
+5. Commit suas mudanças com uma mensagem clara:
+   ```bash
+   git commit -m "Descrição do que foi alterado"
+   ```
+6. Envie suas mudanças para o repositório remoto:
+   ```bash
+   git push origin minha-feature
+   ```
+7. Abra um pull request no repositório original para que as mudanças sejam revisadas e, se aprovadas, integradas ao projeto.
+
+Dicas para contribuir:
+- Certifique-se de que seu código esteja bem testado.
+- Siga o estilo de codificação do projeto.
+- Sempre descreva claramente o que foi alterado ou adicionado no commit.
