@@ -295,7 +295,7 @@ float converterArea(int entrada, int saida, float value) {
 void converterTempo()
 {
     int opcao;
-    float valor, resultado;
+    float valor;
 
     printf("Escolha a conversão de tempo desejada:\n");
     printf("1 - Segundos para minutos e horas\n");
