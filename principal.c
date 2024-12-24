@@ -359,6 +359,36 @@ void converterMassa(){
 }
 
 
+// Conversor de energia - Giltean Tavares
+
+void converter_Energia() {
+    int opcao;
+    double joules, calorias;
+
+    printf("Escolha a conversão desejada:\n");
+    printf("1 - Joules para Calorias\n");
+    printf("2 - Calorias para Joules\n");
+    printf("Opção: ");
+    scanf("%d", &opcao);
+
+    if (opcao == 1) {
+        printf("Digite o valor em Joules: ");
+        scanf("%lf", &joules);
+        calorias = joules / 4.184;
+        printf("%.2lf Joules equivalem a %.2lf Calorias.\n", joules, calorias);
+    } else if (opcao == 2) {
+        printf("Digite o valor em Calorias: ");
+        scanf("%lf", &calorias);
+        joules = calorias * 4.184;
+        printf("%.2lf Calorias equivalem a %.2lf Joules.\n", calorias, joules);
+    } else {
+        printf("Opção inválida.\n");
+    }
+
+    return 0;
+}
+
+
 // interface - Thiago Sousa (github.com/thiagosousa81)
 int main() {
     while (1) {
