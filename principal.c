@@ -358,6 +358,8 @@ void converterMassa(){
     printf("\n");
 }
 
+// decidir conversao
+
 
 // interface - Thiago Sousa (github.com/thiagosousa81)
 int main() {
